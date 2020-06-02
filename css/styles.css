@@ -25,6 +25,14 @@ body {
     background-color: #fff;
     font-family: Roboto, sans-serif;
     }
+html {
+    box-sizing: border-box;
+    }
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    }
 .list {
     margin: 0;
     padding: 0;
@@ -68,6 +76,7 @@ body {
 }
 .link {
     text-decoration: none;
+    cursor: pointer;
 }
 .header-list {
     display: block;
@@ -98,6 +107,22 @@ body {
     letter-spacing: 0.02em;
 
 }
+.mail-icon {
+    width: 16px;
+    height: 11px;
+}
+.mail::before {
+    content: "";
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+    background-image: url("../images/envelope.svg");
+    background-size: contain;
+}
+/* .phone::before {
+    content: "";
+    background-image: url("../images/sprite.svg#smartphone");
+} */
 .mail:hover,
 .mail:focus {
     color: var(--accent-color);
@@ -116,7 +141,15 @@ body {
 /* Герой */
 
 .hero {
-    background-color: var(--background-secondary);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+    
     text-align: center;
 }
 .hero-header {
@@ -172,8 +205,10 @@ body {
     color: var(--text-color);
 }
 .picture {
+    padding: 25px 100px;
     background-color: var(--background-picture-color);
 }
+ 
 /* Гарантии */
 
 .guarantee {
