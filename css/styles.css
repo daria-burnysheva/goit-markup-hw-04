@@ -111,14 +111,14 @@ html {
     width: 16px;
     height: 11px;
 }
-.mail::before {
+/* .mail::before {
     content: "";
     width: 16px;
     height: 11px;
     margin-right: 10px;
     background-image: url("../images/envelope.svg");
     background-size: contain;
-}
+} */
 /* .phone::before {
     content: "";
     background-image: url("../images/sprite.svg#smartphone");
