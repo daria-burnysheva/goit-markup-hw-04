@@ -222,6 +222,7 @@ html {
     display: flex;
     align-items: center;
     padding-left: 0;
+    padding-bottom: 94px;
 }
 .guarantee .item {
     width: 270px;
@@ -257,7 +258,6 @@ html {
     letter-spacing: 0.03em;
 }
 .activity {
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 .list-activity {
@@ -266,6 +266,7 @@ html {
     margin-bottom: 0;
     padding-right: 0;
     padding-left: 0;
+    padding-bottom: 94px;
 }
 .list-activity .item:not(:last-child){
     margin-right: 30px;
@@ -277,7 +278,6 @@ html {
     background-color: var(--background-picture-color);
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-top: 94px;
 }
 .team {
     margin-bottom: 50px;
@@ -320,12 +320,16 @@ html {
     display: block;
     width: 44px;
     height: 44px;
-    margin-left: 10px;
-    margin-bottom: 24px;
     padding: 12px;
 
 
     text-align: center;
+}
+.team-item {
+    padding-bottom: 24px;
+}
+.team-item + .team-item {
+    margin-left: 10px;
 }
 .team-link:hover {
     border-radius: 50%;
@@ -515,14 +519,24 @@ html {
     margin-top: 0;
     padding-left: 0;
 }
+.example {
+    border: 1px solid #EEEEEE;
+    border-top: transparent;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 20px 24px;
+}
 .cards-cont {
     width: 370px;
 }
+.cards-cont:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+ }
 .cards-cont:not(:nth-last-child(-n + 3)) {
 margin-bottom: 50px;
 }
-.cards-cont:nth-last-child(-n + 3) {
-    margin-bottom: 114px;
+.section {
+    padding-bottom: 114px;
 }
 .cards-cont .link {
     display: block;
